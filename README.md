@@ -16,7 +16,7 @@ The workflow supports human-computer interaction (HCI), social computing, comput
 
 Start at the stage your task needs. A question about research ideas does not automatically start experiments. The skill preserves existing project roles, records, and data-access rules.
 
-Each stage ends in explicit checks rather than general advice: a novelty gate against the closest prior work, a decision gate that rejects investigations whose outcomes could not change the plan, failure triage before a direction is abandoned, and checkpoint questions for drift and anchoring.
+Each stage ends in explicit checks rather than general advice: a novelty gate against the closest prior work, a decision gate asking what results could change in conclusions, interpretations, uncertainty, evidence boundaries, or later decisions, failure triage before a direction is abandoned, and checkpoint questions for drift and anchoring. Descriptive and exploratory work can pass the decision gate even when the next activity stays the same.
 
 ## What changes from Agent4Sci
 
@@ -26,7 +26,7 @@ The Agent4Sci paper reports three recurring limitations of frontier agents: nove
 - Keep the forcing questions. A new setting, population, platform, or model applied to an answered question is labeled an application or replication, and at least one candidate should change the framing.
 - Verify a baseline when necessary and reuse reliable results when their conditions match. Baseline reproduction is not prohibited.
 - Work within the project's resource budget. Idle GPUs are not a reason to launch more experiments, but existing data and parallel pilots should be used before new collection.
-- Apply the evidence standards appropriate to the method. Interviews, fieldwork, and design inquiry are not recast as metric optimization or causal experiments, and computational measures, including LLM-based ones, are validated before they are treated as data.
+- Apply the evidence standards appropriate to the method. Interviews, fieldwork, and design inquiry are not recast as metric optimization or causal experiments. Automated and LLM-based classification or coding uses suitable held-out human annotations, while other measurements use checks or reference standards appropriate to the measure. Both require attention to validity and systematic errors across relevant groups.
 - Reflect at meaningful result and decision points. The skill installs no hooks, timers, background workers, or required multi-agent workflow.
 
 The source snapshot, a mechanism-by-mechanism mapping, and the revision history are recorded in [PROVENANCE.md](PROVENANCE.md).

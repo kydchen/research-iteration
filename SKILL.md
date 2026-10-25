@@ -25,7 +25,7 @@ Agents helping with research drift in predictable ways. The checks in each stage
 1. **Novelty miscalibration**: presenting a known method in a new setting, population, platform, or model as a contribution, or claiming novelty after a shallow search.
 2. **Underusing what exists**: proposing new data collection before checking existing data, logs, prior pilots, or public datasets, or running independent cheap checks one at a time.
 3. **Collapse into local variation**: more runs, prompts, survey items, subgroup cuts, or coding passes within one framing instead of a test of a rival explanation.
-4. **Investigations that cannot fail**: pilots in which every outcome looks interesting, so no result could change the plan.
+4. **Investigations that cannot change a judgment**: work whose plausible outcomes would not change a substantive conclusion, interpretation, uncertainty, evidence boundary, or later decision.
 5. **Premature abandonment and anchoring**: dropping a direction after an execution failure or an inconclusive pilot, or holding on to the first thing that worked.
 6. **Overclaiming**: treating one run as a stable effect, interview counts as prevalence, correlation as cause, or a pilot as a population finding.
 7. **Deference**: adopting the user's preferred framing without stating the strongest reason it could fail or may already exist.
@@ -45,23 +45,23 @@ For each direction, specify:
 - **Question and basis**: who or what is studied, which observations or sources motivate it, and what it would add.
 - **Explanations to distinguish**: rival mechanisms or interpretations, or the empirical unknown to clarify. Do not force causal hypotheses onto qualitative or design research.
 - **Smallest useful investigation**: the materials, comparison, prototype, or analysis that can first show whether the direction deserves more work. Check what existing data, logs, prior pilots, or public datasets can already answer before proposing new collection.
-- **Outcome-to-action map**: which result would mean continue, which revise, and which drop.
+- **Outcome-to-judgment map**: what plausible results would change in the conclusions, interpretations, key uncertainties, evidence boundaries, or later decisions. Map results to continue, revise, or drop when that decision is in scope.
 - **Feasibility**: data access and platform terms, ethics review and consent, recruitment, compute and API costs, time, and the condition for stopping.
 
 **Pass two gates before recommending.**
 
 - **Novelty gate**: State in one sentence how the direction differs from the closest prior work. For a new setting, population, platform, tool, or model, name the difference you expect it to make and how the study would detect it. If you cannot, call the direction an application or replication. It can still be the right next step, but do not present it as the novel contribution, and add a candidate that changes the framing. Ask whether an expert who knows the closest work would learn something, or would see standard practice in ambitious language.
-- **Decision gate**: If every plausible outcome leads to the same next step, the investigation cannot change a judgment, so redesign or drop it. For exploratory or formative work, name the later choices its findings could change.
+- **Decision gate**: Name what plausible outcomes could change in a substantive conclusion, interpretation, key uncertainty, evidence boundary, or later decision. If none could change any of these, redesign or drop the investigation. Descriptive, exploratory, and formative work can add knowledge even when the next activity stays the same. Do not require a continue, revise, or drop choice when the task is to characterize or understand a phenomenon.
 
 **Recommend one primary next step**, plus a cheap pilot of the framing-changing candidate when it can run alongside. Say why the primary step beats the alternatives on knowledge gained, power to distinguish explanations, and cost. State the strongest objection to the favored direction before its merits, including when the user favors it. Verify a baseline when no reliable one exists, and reuse results when they are verifiable and their conditions match. Leave long-term, causal, and population-level questions open when a pilot cannot settle them.
 
 ## Stage 2: Plan, run, or interpret an investigation
 
-**Fix the comparison first.** If the records show no prior-work check or outcome-to-action map for this investigation, run both Stage 1 gates briefly before planning, without restarting ideation. Record the question for this round, the baseline or comparison, what evidence will count, the budget, and the stopping rule. Read existing records first and ask only about gaps that would change execution. Without a request to execute, deliver a plan.
+**Fix the comparison first.** If the records show no prior-work check or outcome-to-judgment map for this investigation, run both Stage 1 gates briefly before planning, without restarting ideation. Record the question for this round, the baseline or comparison, what evidence will count, the budget, and the stopping rule. Read existing records first and ask only about gaps that would change execution. Without a request to execute, deliver a plan.
 
 **Apply the method's own standards.**
 
-- **Computational and quantitative work**, including models, digital-trace data, and observational analyses: data provenance and sampling, including who is missing; the unit of analysis; how each construct is measured, validating automated or LLM-based measures against human labels held out from any prompt or codebook iteration, and checking whether their errors differ across the groups being compared, before treating them as data; the identification strategy behind any causal claim; train, validation, and test boundaries for predictive work; metric definitions; and code, data, and configuration versions. Choose repetitions across seeds, folds, periods, or groups to fit the question, and keep conditions comparable.
+- **Computational and quantitative work**, including models, digital-trace data, and observational analyses: establish data provenance, sampling and who is missing, the unit of analysis, and how each measure supports its intended interpretation. For automated or LLM-based classification, coding, or other judgments assessed through human annotation, validate against suitable human annotations held out from prompt, model, and codebook iteration. Document annotation quality and disagreement, and check whether errors differ across the groups being compared. For other automated measures, use checks or reference standards appropriate to the measure, including definitions, instrumentation or log accuracy, coverage, missingness, and systematic error across relevant groups. An accurately computed count, duration, or network statistic does not by itself validate a social construct. State the identification strategy behind causal claims, train, validation, and test boundaries for predictive work, metric definitions, and code, data, and configuration versions. Choose repetitions across seeds, folds, periods, or groups to fit the question, and keep conditions comparable.
 - **Surveys and experiments with people**: power or precision targets based on prior work or a smallest effect of interest rather than on pilot estimates, preregistration where the project uses it, manipulation and attention checks, and consent.
 - **Qualitative and design work**: how the materials bear on the question; sampling and context boundaries; how concepts are recognized, with each theme traceable to excerpts and their sources; researcher positionality; negative cases; and competing interpretations. Treat coding done by an agent as a draft for the researcher to check. Do not turn interviews into causal tests or counts into population estimates.
 - **Simulations and prototypes**: state assumptions and simplifications, and keep simulated results, prototype feasibility, and effects in actual use distinct.
@@ -77,7 +77,7 @@ For each direction, specify:
 3. **Inconclusive result** (too small or noisy to distinguish the explanations): decide whether a larger or sharper test is worth its cost.
 4. **Evidence against the explanation**: record it as a result, then revise or drop the direction.
 
-The first three say little about the idea itself, so do not drop a direction because of them unless a stopping rule applies; after the fourth, do not keep patching. Stop when the budget is spent, when further work is unlikely to change the decision, or when necessary materials are missing.
+The first three say little about the idea itself, so do not drop a direction because of them unless a stopping rule applies; after the fourth, do not keep patching. Stop when the budget is spent, when further work is unlikely to add knowledge or change a decision, or when necessary materials are missing.
 
 **Protect the evidence.** Keep data boundaries and evaluation rules fixed. Material reserved for confirmation or final evaluation must not guide exploration, tuning, or result selection, and this skill does not authorize opening it. If it has already informed a change, disclose that it can no longer serve as independent validation. Fix analysis choices before seeing outcomes, or report the analyses as exploratory. Follow existing preregistration, ethics, consent, and data-access requirements, and record plan changes as changes rather than presenting them later as prior decisions.
 
@@ -115,7 +115,7 @@ Write the decision, its basis, and the next step into the existing record. Carry
 
 ## Deliver
 
-Lead with the judgment: the recommended next step or decision, and why. Then make its basis checkable: sources with locations, a comparison table when there are real alternatives, the outcome-to-action map, and what remains uncertain. For ideation, always include the one-sentence difference from the closest prior work. Report other checks only where they changed the recommendation, and do not reproduce the checklists.
+Lead with the judgment: the recommended next step or decision, and why. Then make its basis checkable: sources with locations, a comparison table when there are real alternatives, the outcome-to-judgment map, and what remains uncertain. For ideation, always include the one-sentence difference from the closest prior work. Report other checks only where they changed the recommendation, and do not reproduce the checklists.
 
 Use the project's existing notes and directories. When something must be saved, record the decision, the evidence locations, and the next step, without creating several documents that say the same thing. If a separate skill such as `research-argument-map` is available and the user wants to see how questions, claims, and evidence connect, it can complement this one; neither requires the other.
 
