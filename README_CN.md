@@ -76,7 +76,7 @@ $research-iteration 检查这些实验记录。我们已经学到了什么，哪
 
 在 Claude Code 中，将示例里的 `$research-iteration` 换成 `/research-iteration`。提供实际已有的材料即可，缺失证据应保留为未决项。
 
-目前 skill 正文和参考文件为中文，README 提供中英文版本。指令要求代理跟随用户指定的输出语言，没有另外维护一套英文 skill。
+skill 正文、参考文件和显示信息均使用英文维护。回答与交付物仍跟随用户指定的输出语言，未指定时跟随提问语言。README 保留中英文版本，两份说明对应同一套 skill。
 
 ## 文件与相关流程
 

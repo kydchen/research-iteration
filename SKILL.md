@@ -1,58 +1,60 @@
 ---
 name: research-iteration
-description: "把研究构思、试点结果或停滞的研究推进为有文献依据、能区分解释、成本可控的下一轮验证。用于选题与研究问题设计、实验或田野试点规划、多轮研究中的方向调整。适用于 HCI、社会计算和技术系统研究，不用于普通润色、论文摘要或常规代码修复。"
+description: "Turn research ideas, pilot results, or stalled projects into a literature-grounded next investigation that distinguishes explanations within a realistic budget. Use for research questions, experiment or fieldwork pilot planning, and decisions during iterative research in HCI, social computing, and technical systems. Not for routine prose editing, paper summaries, or ordinary code fixes."
 license: Apache-2.0
 ---
 
-# 研究构思、验证与反思
+# Research ideation, investigation, and reflection
 
-目标是让下一步产生能改变判断的证据。跟随用户语言和项目的方法论，不把所有研究都写成模型指标优化。只执行用户当前要求的阶段，已有结论与材料充分时直接接着推进。
+Help the next step produce evidence that can change a research judgment. Respect the project's methodology rather than treating every study as model-metric optimization. Perform only the stage the user requests, building on sufficient existing findings and materials.
 
-## 从当前阶段进入
+Use the language the user requests for responses and deliverables. If no output language is specified, follow the language of the user's request. English instructions do not make English the default output language.
 
-- **构思或选题**：使用下文，形成有依据的候选问题和最小验证。
-- **实施或分析一轮验证**：读取 [验证与实验管理](references/experiment.md)，复用已有方案与记录，不重做完整选题。
-- **研究停滞、证据冲突或准备扩大投入**：读取 [阶段反思](references/reflection.md)，给出继续、修改、换方向或收尾的具体决定。
+## Enter at the current stage
 
-只有涉及的阶段才加载对应参考文件。普通构思讨论不自动运行实验、创建长期任务或增设文件体系。已有执行者或职责分工时，交付当前角色应做的方案、评审或工作单。
+- **Ideation or topic selection**: Use the guidance below to develop grounded candidate questions and a small first investigation.
+- **Conducting or interpreting an investigation**: Read [Investigation and experiment management](references/experiment.md). Reuse the existing plan and records rather than restarting topic selection.
+- **Stalled progress, conflicting evidence, or a planned increase in investment**: Read [Reflection at decision points](references/reflection.md). Make a specific decision to continue, revise, change direction, or conclude.
 
-## 让研究问题落到对象与证据上
+Load only the references relevant to the current stage. An ordinary discussion of ideas does not automatically launch experiments, create long-running tasks, or introduce a new set of project documents. When roles or execution responsibilities are already assigned, deliver the plan, review, or work order appropriate to the current role.
 
-先读当前提案、关键材料和已有结果，辨认研究对象、分析单位、核心概念、已知事实和未决问题。优先利用项目已有记录，不要求用户重新填写已知信息。尚无明确问题时给出候选表述，标明为建议。
+## Ground the question in research objects and evidence
 
-从值得解释的现象、矛盾或后果出发，说清研究完成后会改变谁对什么的理解或判断。HCI 和社会计算研究保留参与者、组织安排、权力和使用情境，技术系统研究说明机制如何导致用户或系统可观察的后果。
+Read the current proposal, key materials, and existing results. Identify the research population or system, unit of analysis, core concepts, established facts, and unresolved questions. Use existing project records rather than asking the user to supply known information again. If the research question is not yet clear, offer candidate formulations and label them as suggestions.
 
-区分当前任务要做的是描述现象、解释机制、比较方法、提出设计知识，还是验证一个技术主张。贡献可以来自新的经验材料、边界条件、理论解释或设计认识，不以复杂度或风险高低评价价值。
+Start from a phenomenon, tension, or consequence worth explaining. State whose understanding or judgment the completed research could change, and about what. In HCI and social computing, retain participants, organizational arrangements, power, and contexts of use. In technical systems research, explain how a mechanism produces consequences observable by users or in the system.
 
-## 校准与已有工作的差别
+Distinguish whether the task aims to describe a phenomenon, explain a mechanism, compare methods, develop design knowledge, or investigate a technical claim. Contributions can come from new empirical material, boundary conditions, theoretical explanations, or design insights. Complexity and risk do not determine research value.
 
-检索直接相关的领域研究，以及确实可能提供新思路的方法或邻近领域。依据实际读到的论文、官方实现和项目材料说明：最近的工作回答了什么，当前问题还差什么，候选方案是否只是已知方法的迁移或工程改进。
+## Calibrate the difference from prior work
 
-保留可核对的出处和定位，将已核实的差别、分析者推断和待查项分开。未检索到不等于不存在。没有读到全文、实现或关键附录时，明确哪些判断仍不能成立。对新颖性不作超出检索范围的保证。
+Search directly relevant domain research and methods or neighboring fields that could meaningfully inform the question. Based on papers, official implementations, and project materials actually inspected, explain what the closest work answers, what remains unresolved, and whether a candidate is an application of a known method or an engineering improvement.
 
-检索与检查实现可交替进行，让真实数据和系统约束修正构思。不强制先完成固定数量的文献综述，也不默认启用多代理。
+Keep verifiable citations and source locations. Separate verified differences, the analyst's inferences, and matters still to check. Not finding prior work does not establish its absence. If the full text, implementation, or a key appendix was unavailable, state which judgments remain unsupported. Do not guarantee novelty beyond the scope of the search.
 
-## 选择能区分解释的下一步
+Alternate literature search and implementation inspection when useful, letting actual data and system constraints revise the ideas. Do not require a fixed number of literature reviews before proceeding or enable multiple agents by default.
 
-需要比较时，提出少量有实质差别的候选方向。为每个有希望的方向说明：
+## Choose a next step that distinguishes explanations
 
-- **问题与根据**：研究谁或什么，依据哪些现有观察或文献，预期补充什么知识。
-- **待辨别的解释**：可能的机制、替代解释，或尚需澄清的经验问题。定性与设计研究不强造因果假设。
-- **最小验证**：用什么材料、对照、原型或分析先判断方向是否值得继续。说明什么结果支持继续，什么结果需要修改或放弃当前解释。
-- **可行性**：现有材料、实现和访问条件能支持到哪里，需要多少时间或资源，什么条件下停止。
+When a comparison is useful, propose a small set of substantively different directions. For each promising direction, explain:
 
-同时考虑可行路径与有充分依据的探索路径，按知识增益、区分能力和成本排序。探索路径应说明改变了什么问题表示、解释机制、观察方式或设计前提。若用户要求创新，避免所有候选都在同一设定中只调参数，先用小试点检验有实质差别的思路。若任务是复现、描述或可靠性改进，直接完成该目标。
+- **Question and basis**: Who or what is being studied, which observations or literature motivate the question, and what knowledge it could add.
+- **Explanations to distinguish**: Possible mechanisms, alternative explanations, or an empirical question that needs clarification. Do not impose causal hypotheses on qualitative or design research.
+- **Smallest useful investigation**: Which materials, comparison, prototype, or analysis could first establish whether the direction merits further work. State which outcomes would support continuing and which would require revising or abandoning the current explanation.
+- **Feasibility**: What existing materials, implementations, and access conditions allow, the time or resources required, and the conditions for stopping.
 
-推荐优先做的一步，并说明选择依据。没有可靠基线时先做必要核验，有可核对的现成结果时复用。小规模试点不能确认的长期效果、因果关系或总体结论应明确保留。
+Consider both feasible approaches and well-grounded exploratory approaches. Prioritize their potential knowledge gain, ability to distinguish explanations, and cost. An exploratory approach should specify what changes in the problem representation, explanatory mechanism, way of observing, or design premise. When the user seeks innovation, avoid proposing only parameter variations within one framing. Use small pilots to investigate substantively different ideas. When the task is reproduction, description, or reliability improvement, complete that goal directly.
 
-## 与现有工作衔接
+Recommend one next step and explain the choice. Verify a baseline when a reliable one is missing, and reuse existing results when they are verifiable and applicable. Keep long-term effects, causal relationships, and population-level claims unresolved when a small pilot cannot establish them.
 
-沿用当前研究笔记、实验登记和项目目录。需要保存时只记录本次决定、证据位置及下一步，不自动生成多个同义文档。
+## Connect to existing work
 
-如果用户要检查研究问题、主张与证据之间的具体关系，可以使用已有的 `research-argument-map`。本 skill 负责决定下一轮验证，不强制画图，也不自动串联写作润色 skill。
+Use the project's current research notes, experiment records, and directories. When saving work is needed, record the decision, evidence locations, and next step without automatically creating several documents that say the same thing.
 
-交付以判断开头，让读者能核对依据、剩余不确定性和下一步。仅在确有并列候选时用表格，不逐项展示内部自问过程。
+If the user wants to inspect specific relationships among research questions, claims, and evidence, an available `research-argument-map` skill can help. This skill focuses on choosing the next investigation. It does not require a diagram or automatically invoke writing and editing skills.
 
-## 来源与适配
+Lead the deliverable with a judgment. Make its basis, remaining uncertainty, and next step verifiable. Use a table when there are actual alternatives to compare, and summarize the decision without exposing every internal self-assessment question.
 
-改编自 Agent4Sci 的 research、experiment、checklist 三项 skill，2026-10-25 重写为适合本地研究工作的版本。保留来源声明，见 [来源与适配说明](references/provenance.md) 和 [LICENSE](LICENSE)。仅在核对来源、改动理由或适用边界时读取说明。
+## Origins and adaptation
+
+Adapted from Agent4Sci's research, experiment, and checklist skills on 2026-10-25 for local research workflows. Preserve attribution in [Origins and adaptation notes](references/provenance.md) and [LICENSE](LICENSE). Read the notes only when checking sources, adaptation choices, or applicability.

@@ -1,25 +1,25 @@
-# 阶段反思
+# Reflection at decision points
 
-用于有新证据、连续失败、方向停滞或准备扩大投入的时点。已经完成目标时直接收尾，不为填写清单延长任务。
+Use this reference when new evidence arrives, attempts repeatedly fail, progress stalls, or investment is about to increase. If the goal is already complete, conclude rather than extending the task to fill out a checklist.
 
-## 触发时机
+## When to check
 
-默认在一轮关键结果之后、重复尝试不再产生新信息时，以及扩大采集或计算投入之前检查。持续数小时的已授权任务，可在约一小时后的下一个工作节点补做检查。短任务无需计时。
+Check after a round of important results, when repeated attempts stop producing new information, and before increasing data collection or computing effort. During an authorized task lasting several hours, an additional check may occur at the next working point after roughly an hour. Short tasks do not need a timer.
 
-这只是任务内的检查约定，不会自行唤醒会话，也不保证后台定时执行。用户明确要求定期提醒或持续监控时，才另行使用环境提供的自动化功能。
+This is an in-task practice. It does not wake a session or guarantee scheduled background execution. Use the environment's automation features separately only when the user explicitly requests recurring reminders or ongoing monitoring.
 
-## 只追问会影响决定的事
+## Ask only what could change the decision
 
-1. **问题**：当前工作仍回应哪个研究问题？实际产出是否只是更多运行、更好看的指标或更复杂的实现？若是在复现或可靠性任务中，按该任务本来的目标判断。
-2. **证据**：本轮什么观察改变了判断？哪些结果仍兼容另一种解释？主张是否超出了材料与研究设计能支持的范围？
-3. **方向**：是否把方法迁移或调参包装为新贡献？还有什么有根据且真正不同的解释值得先区分？不为追求惊奇而增加风险。
-4. **成本**：哪些作业仍有价值，哪些失败需要修复？剩余预算是否足以完成验证与交付？是否已有足够证据作当前决定？
+1. **Question**: Which research question does the current work still address? Is the output only more runs, more attractive metrics, or a more complex implementation? For reproduction or reliability tasks, judge progress against that task's actual goal.
+2. **Evidence**: Which observation changed the judgment this round? Which results remain compatible with another explanation? Do the claims exceed what the materials and study design support?
+3. **Direction**: Is method transfer or parameter tuning being presented as a new contribution? What grounded and substantively different explanation is worth distinguishing next? Do not increase risk just to produce a surprising result.
+4. **Cost**: Which jobs remain worthwhile, and which failures need correction? Is the remaining budget sufficient for validation and delivery? Is there already enough evidence to make the current decision?
 
-不必逐题输出。概括真正改变决定的发现，并选择下一步：
+Do not output an answer to every question by default. Summarize the findings that affect the decision and select a next step:
 
-- **继续**：现有证据支持方向，下一步仍能显著减少关键不确定性。
-- **修改**：修复一个明确的实现、取样、测量或解释问题，再作有限验证。
-- **换方向**：新证据削弱了当前解释，或另一路径能更有效回答原问题。超出用户目标时先澄清。
-- **收尾**：目标已完成、预算到限，或继续尝试已难以改变判断。交付现有结果及未解决部分。
+- **Continue**: Evidence supports the direction, and the next step can still substantially reduce a key uncertainty.
+- **Revise**: Correct a specific implementation, sampling, measurement, or interpretation problem, then conduct a bounded investigation.
+- **Change direction**: New evidence weakens the current explanation, or another approach can answer the original question more effectively. Clarify first if the change would exceed the user's goal.
+- **Conclude**: The goal is complete, the budget is exhausted, or further attempts are unlikely to change the judgment. Deliver current results and unresolved issues.
 
-将决定、依据和下一步写回已有记录。发现需要改正的事项后，在授权范围内执行或交给既定负责人，不把填写清单当成已经完成改正。
+Write the decision, its basis, and the next step into the existing record. Act on identified corrections within the authorized scope or hand them to the assigned owner. Completing the checklist is not the same as completing the corrective work.

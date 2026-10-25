@@ -1,40 +1,40 @@
-# 验证与实验管理
+# Investigation and experiment management
 
-用于规划、执行或分析一轮研究验证。实验只是其中一种形式，访谈试点、材料编码、原型比较和系统测量依各自的方法标准开展。
+Use this reference to plan, conduct, or interpret one research investigation. Experiments are one form of investigation. Interview pilots, material coding, prototype comparisons, and system measurements should follow their own methodological standards.
 
-## 开始前固定比较条件
+## Establish comparison conditions before starting
 
-明确本轮要回答的问题、现有基线或比较材料、主要判断依据、预算和停止条件。优先读取已有记录，只有影响实施的缺失条件才需要澄清。没有得到执行请求时交付方案，不启动完整研究。
+Identify the question for this round, the existing baseline or comparison material, the main basis for judgment, the budget, and the stopping conditions. Read existing records first and clarify missing information only when it affects execution. Without a request to execute, deliver a plan rather than launching the full study.
 
-- 技术和定量研究：核对数据来源、分析单位、划分、指标定义、代码及配置版本，确认基线可比较。复用已验证且条件匹配的记录，缺少可信基线时先做必要复现。不要照搬固定种子或折数，也不要为追求好结果临时改变它们。
-- 定性和设计研究：明确材料如何回应研究问题、取样与情境边界、概念如何被识别、分析过程怎样留痕。保留研究者位置、反例与不同解释，不把访谈转化成虚构的因果检验或代表性统计。
-- 模拟与原型研究：说明所用假设和简化，区分模拟结果、原型可行性与真实使用中的效果。
+- **Technical and quantitative research**: Check data provenance, units of analysis, splits, metric definitions, and code and configuration versions to establish comparability. Reuse verified results when conditions match, and reproduce what is necessary when a credible baseline is missing. Do not copy a fixed seed or fold count without justification, or change them opportunistically to obtain better results.
+- **Qualitative and design research**: Establish how materials address the question, the boundaries of sampling and context, how concepts are recognized, and how the analysis will be documented. Retain researcher positionality, counterexamples, and competing interpretations. Do not turn interviews into unsupported causal tests or population-representative statistics.
+- **Simulation and prototype research**: State assumptions and simplifications. Distinguish simulation results, prototype feasibility, and effects in actual use.
 
-## 先验证可运行性，再扩大投入
+## Check feasibility before increasing investment
 
-选择能检验核心前提的最小试点。代码变更先做短小但有代表性的运行，核查输入、输出、运行时间和失败信号。材料分析先检查样例、编码或解释是否确实能区分所关心的现象。试点本身改变了方案时，记录改变及理由。
+Choose the smallest pilot that can examine the core premise. For code changes, begin with a short but representative run and check inputs, outputs, runtime, and failure signals. For material analysis, check whether the examples, coding, or interpretations can distinguish the phenomena of interest. If the pilot changes the design, record the change and its rationale.
 
-使用项目已有的日志、目录和任务管理方式。实验输出相互隔离，避免覆盖原始材料、基线结果或其他正在运行的工作。并发仅用于独立任务，并受已获授权的时间、费用和计算资源约束。空闲资源本身不是新增实验的理由。
+Use existing project logs, directories, and task-management practices. Isolate experimental outputs to avoid overwriting raw materials, baseline results, or other ongoing work. Run independent tasks concurrently only within authorized time, spending, and computing limits. Idle resources alone do not justify additional experiments.
 
-为长作业保留任务标识、日志或进度位置、预计完成时间。在有新结果、错误或明显延误时检查，必要时依据实测瓶颈优化。CPU、内存、磁盘和接口额度同样计入成本，不预设本机有 NVIDIA GPU。
+For long jobs, retain a job identifier, log or progress location, and expected completion time. Inspect new results, errors, or material delays, and optimize measured bottlenecks when necessary. Account for CPU, memory, storage, and API quotas as well as GPU use. Do not assume the machine has an NVIDIA GPU.
 
-## 保留一次验证如何改变判断
+## Record how an investigation changes the judgment
 
-复用现有研究记录。没有记录格式且任务需要多轮追踪时，用一份简表即可：
+Reuse the existing research record. If no format exists and the task needs multiple rounds of tracking, one compact table is sufficient:
 
-| 编号与状态 | 问题或假设 | 材料与比较条件 | 方法、版本与产物位置 | 预算与实际消耗 | 结果及局限 | 决定与下一步 |
+| ID and status | Question or hypothesis | Materials and comparison conditions | Method, version, and artifact locations | Budget and actual cost | Results and limitations | Decision and next step |
 | --- | --- | --- | --- | --- | --- | --- |
 
-状态应分清计划、运行中、完成、失败和未执行。有意省略的条件也记下。已计划的比较、失败运行和负结果不能因为没有提高指标就从记录中消失。
+Distinguish planned, running, completed, failed, and not-executed work. Record deliberately omitted conditions. Planned comparisons, failed runs, and negative results must not disappear from the record merely because they did not improve a metric.
 
-定量结论报告差异大小与适当的不确定性，不能把单次运行或微小数值改善写成稳定效果。需要跨种子、折、时段或群体比较时，依据问题选择并保持比较条件一致，不因原版 skill 的规定一律增加重复运行。
+For quantitative claims, report the size of the difference and appropriate uncertainty. Do not describe a single run or a tiny numerical improvement as a stable effect. Choose comparisons across seeds, folds, periods, or groups according to the question and keep conditions comparable. Do not add repetitions solely because the upstream skill prescribes them.
 
-对失败先区分运行或数据问题、研究设计问题与不支持当前假设。只有能说明修复改变了什么，并且仍在预算内时才重试。耗尽预算、下一次验证已难以改变决定或所需材料不可得，都可以构成停止理由，无须证明所有变体不可能成功。
+When work fails, distinguish runtime or data problems, study-design problems, and evidence that does not support the current hypothesis. Retry only when the proposed correction has a clear purpose and remains within budget. Reaching the budget, finding that another investigation is unlikely to change the decision, or lacking necessary materials can justify stopping. There is no need to prove that every variant would fail.
 
-## 保护验证的意义
+## Preserve the value of validation
 
-固定数据边界和评价规则。用于最终检验的留出材料不得反过来用于选方向、调参或筛选结果。最终评估按项目既定权限和流程进行，不能因本 skill 要求验证就打开封存样本。若已查看留出结果并据此改动，应说明它已参与探索，不能继续称为独立验证。
+Keep data boundaries and evaluation rules fixed. Held-out material reserved for final evaluation must not guide direction selection, tuning, or result selection. Follow the project's established permissions and process for final evaluation. This skill does not authorize opening sealed samples. If held-out results have already informed a change, disclose that they have entered exploration and can no longer serve as independent validation.
 
-已有预注册、研究伦理、知情同意或数据访问要求时沿用。探索性分析可调整方案，但必须记录调整，不能追认成预先决定。定性研究按自身的反例分析、材料可追溯性和反思要求保持可信度，不机械套用训练集与测试集。
+Follow existing preregistration, research ethics, informed-consent, and data-access requirements. Exploratory analysis may change a plan, but record the change rather than presenting it retrospectively as a prior decision. Qualitative research should maintain credibility through appropriate counterexample analysis, traceable materials, and reflexivity rather than mechanically adopting training and test splits.
 
-一轮结束时说明得到什么证据、最多支持什么结论，以及继续、修改、换方向或收尾的理由。需要改变研究方向或扩大投入时，再读取 [阶段反思](reflection.md)。
+At the end of a round, state the evidence obtained, the strongest conclusion it supports, and the reasons to continue, revise, change direction, or conclude. Before changing direction or increasing investment, read [Reflection at decision points](reflection.md).

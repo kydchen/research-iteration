@@ -76,7 +76,7 @@ $research-iteration Review these experiment records. What have we learned, which
 
 Replace `$research-iteration` with `/research-iteration` for Claude Code. Provide the materials you actually have; missing evidence should remain visible rather than being filled in.
 
-The skill instructions and supporting references are currently written in Chinese. The READMEs are available in English and Chinese, and the instructions ask the agent to follow the user's requested language. There is no separate English skill implementation.
+The skill instructions, supporting references, and display metadata are written in English. Responses and deliverables follow the user's requested language, or the language of the user's request when no output language is specified. The READMEs are available in English and Chinese. Both describe the same skill implementation.
 
 ## Files and related workflows
 
